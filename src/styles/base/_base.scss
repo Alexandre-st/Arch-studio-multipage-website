@@ -1,0 +1,10 @@
+@use '../variables/mixins' as *;
+
+:root {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 10px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}

@@ -1,0 +1,61 @@
+@use '../variables/mixins' as *;
+
+.big-title {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  letter-spacing: -1.2px;
+
+  @include mq(tablet) {
+    font-size: 9.6rem;
+    line-height: 8.0rem;
+    letter-spacing: -2px;
+  } 
+
+  @include mq(desktop) {
+    font-size: 9.6rem;
+    line-height: 8.0rem;
+  }
+}
+
+.mid-title {
+  font-size: 4.8rem;
+  line-height: 5.2rem;
+  letter-spacing: -1.71429px;
+
+  @include mq(tablet) {
+    font-size: 7.2rem;
+    line-height: 6.4rem;  
+    letter-spacing: -2px;
+  }
+}
+
+.lil-title {
+  font-size: 3.2rem;
+  line-height: 4.0rem;
+
+  &-white {
+    color: #FFFFFF;
+  }
+
+  &-dark {
+    color: #1B1D23;
+  }
+}
+
+.text {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+
+  &-white {
+    color: #FFFFFF;
+  }
+  
+  &-opacity {
+    opacity: 0.75;
+  }
+
+  &-grey {
+    color: #60636D;
+  }
+}
