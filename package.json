@@ -1,6 +1,17 @@
 {
   "name": "arch-studio-website",
+  "description": "Arch-studio multipage website",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alexandre-st/Arch-studio-multipage-website"
+  },
+  "author": "Alexandre-st",
+  "license": "ISC",
+  "keywords": [
+    "REACT",
+    "SASS"
+  ],
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -11,6 +22,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
