@@ -19,16 +19,16 @@ const Menu = () => {
         <>
           <img className="header-close" src={CloseMenu} alt="Close the Menu" />
           <div className="nav">
-            <nav>
+            <nav className="nav-content">
               <ul className="nav-list">
-                <li className="nav-link">
-                  <Link to="/">HOME</Link>
+                <li className="nav-list-link">
+                  <Link to="/">Portfolio</Link>
                 </li>
-                <li className="nav-link">
-                  <Link to="/portfolio">PORTFOLIO</Link>
+                <li className="nav-list-link">
+                  <Link to="/">About Us</Link>
                 </li>
-                <li className="nav-link">
-                  <Link to="/contact">CONTACT ME</Link>
+                <li className="nav-list-link">
+                  <Link to="/">Contact</Link>
                 </li>
               </ul>
             </nav>

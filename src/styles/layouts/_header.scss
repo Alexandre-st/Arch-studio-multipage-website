@@ -1,0 +1,49 @@
+@use '../variables/mixins' as *;
+
+.header {
+  &-container {
+    margin: 3.2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq(tablet) {
+      margin: 5.6rem 0;
+      justify-content: flex-start;
+    }
+
+    &-logo {
+      width: 7.7rem;
+      height: 3.2rem;
+
+      @include mq(tablet) {
+        width: 9.616rem;
+        height: 4rem;
+      }
+    }
+  }
+
+  &-nav {
+    display: none;
+
+    @include mq(tablet) {
+      display: block;
+      margin-left: 7.884rem;
+    }
+
+    @include mq(laptop) {
+      margin-left: 9.884rem;
+    }
+
+    &-list {
+      @include mq(tablet) {
+        display: flex;
+        gap: 6.1rem;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+        color: #7D828F;
+      }
+    }
+  }
+}

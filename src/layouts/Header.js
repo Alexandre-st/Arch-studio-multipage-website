@@ -5,10 +5,10 @@ import Menu from '../components/Menu';
 
 const Header = () => {
   return ( 
-    <header>
-      <div className="">
+    <header className="header">
+      <div className="header-container container">
         <Link to='/'>
-          <img src={ArcLogo} alt="Arc" />
+          <img className="header-container-logo" src={ArcLogo} alt="Arc" />
         </Link>
 
         <nav className="header-nav">
