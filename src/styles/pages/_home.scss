@@ -1,0 +1,92 @@
+@use '../variables/mixins' as *;
+
+// == Hero Part for the HomePage
+.home-hero {
+  &-content {
+    &-text {
+      display: none;
+    }
+  }
+}
+
+// == Welcome section 
+.welcome {
+  margin-top: 7.2rem;
+
+  @include mq(tablet) {
+    margin-top: 8.9rem;
+  }
+
+  @include mq(laptop) {
+    margin-top: 10.8rem;
+    position: relative;
+  }
+
+  &-content {
+
+    h2 {
+      @include mq(tablet) {
+        margin-top: -4.1rem;
+        width: 44.6rem;
+      }
+    }
+
+    &-text {
+      margin-top: 2.2rem;
+      color: #60636D;
+
+      @include mq(tablet) {
+        margin-top: 4.3rem;
+      }
+
+      @include mq(laptop) {
+        display: flex;
+        gap: 12.5rem;
+      }
+
+      @include mq(desktop) {
+        margin-left: 19.9rem;
+      }
+
+      &-img {
+        display: none;
+
+        @include mq(laptop) {
+          display: block;
+          margin-top: -13.5rem;
+        }
+      }
+    }
+  }
+
+  // == Design part for the welcome section
+  &-word {
+    display: none;
+
+    @include mq(tablet) {
+      display: block;
+      font-size: 15rem;
+      line-height: 20rem;
+      font-weight: 700;
+      letter-spacing: -3px;
+      color: #EEEFF4;
+    }
+
+    @include mq(laptop) {
+      font-size: 25rem;
+      line-height: 20rem;
+      letter-spacing: -5px;
+      // position: absolute;
+    }
+  }
+
+  &-border {
+    border: 1px solid #C8CCD8;
+    width: 6.5rem;
+    margin-bottom: 6.8rem;
+
+    @include mq(tablet) {
+      display: none;
+    }
+  }
+}

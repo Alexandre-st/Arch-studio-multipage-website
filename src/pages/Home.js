@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import ParamourMobile from '../assets/home/mobile/image-hero-paramour.jpg'; 
 import ParamourTablet from '../assets/home/tablet/image-hero-paramour.jpg'; 
 import ParamourDesktop from '../assets/home/desktop/image-hero-paramour.jpg';
+import WelcomeImg from '../assets/home/desktop/image-welcome.jpg';
 import SmTeamMobile from '../assets/home/mobile/image-small-team.jpg' ;
 import SmTeamTablet from '../assets/home/tablet/image-small-team.jpg' ;
 import SmTeamDesktop from '../assets/home/desktop/image-small-team.jpg'; 
@@ -22,24 +23,25 @@ const Home = () => {
             <p className="text">
               Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.
             </p>
+            <Link to='/'>See Our Portfolio</Link>
           </div>
-          <Link to='/'>See Our Portfolio</Link>
         </div>
       </section>
 
-      <section className="welcome">
+      <section className="welcome container">
         <div className="welcome-content">
+          <div className="welcome-border" />
+          <p className="welcome-word">Welcome</p>
           <h2 className="mid-title">Welcome to Arch Studio</h2>
           <div className="welcome-content-text">
             <p className="text">
               We have a unique network and skillset to help bring your projects to life. Our small team of highly skilled individuals combined with our large network put us in a strong position to deliver exceptional results.
-            </p>
-            <p className="text">
+              <br /><br />
               Over the past 10 years, we have worked on all kinds of projects. From stations to high-rise buildings, we create spaces that inspire and delight.
-            </p>
-            <p className="text">
+              <br /><br />
               We work closely with our clients so that we understand the intricacies of each project. This allows us to work in harmony the surrounding area to create truly stunning projects that will stand the test of time.
             </p>
+            <img className="welcome-content-text-img" src={WelcomeImg} alt="Bulding representation" />
           </div>
         </div>
       </section>

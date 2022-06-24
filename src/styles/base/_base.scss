@@ -11,14 +11,14 @@ h1, h2, h3, h4 {
 
 .container {
   max-width: 110rem;
-  margin: auto;
   padding: 0 3.2rem;
+  margin: auto;
 
   @include mq(tablet) {
-    padding: 0 9.6rem;
+    padding: 0 9.7rem;
   }
 
-  @include mq(laptop) {
-    padding: 0 16.4rem;
+  @include mq(desktop) {
+    padding: 0;
   }
 }
