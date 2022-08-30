@@ -83,10 +83,32 @@
   &-border {
     border: 1px solid #C8CCD8;
     width: 6.5rem;
-    margin-bottom: 6.8rem;
+    margin-bottom: 6.7rem;
 
     @include mq(tablet) {
       display: none;
     }
+  }
+}
+
+// == Infos section
+.infos {
+  margin-top: 11.3rem;
+
+  &-content {
+    position: relative;
+
+    &-text {
+      display: none;
+    }
+  }
+}
+
+// == Featured section
+.section {
+  margin-top: 7.3rem;
+
+  &-content {
+    margin-top: 4.3rem;
   }
 }

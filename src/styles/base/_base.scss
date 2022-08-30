@@ -22,3 +22,27 @@ h1, h2, h3, h4 {
     padding: 0;
   }
 }
+
+.container-img {
+  max-width: 110rem;
+  margin: auto;
+}
+
+.button {
+  background-color: #1B1D23;
+  height: 7.2rem;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  padding: 2.5rem 0 2.2rem 0;
+
+  img {
+    filter: brightness(0) invert(1);
+    width: 2.4rem; 
+    height: 1.8rem; 
+  }
+}

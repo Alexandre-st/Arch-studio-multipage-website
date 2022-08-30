@@ -1,0 +1,67 @@
+@use '../variables/mixins' as *;
+
+.footer {
+  background-color: #EEEFF4;
+  padding-bottom: 4.8rem;
+  margin-top: 13.2rem;
+
+  @include mq(tablet) {
+    margin-top: 20rem;
+    padding-bottom: 0;
+  }
+
+  &-container {
+    position: relative;
+  }
+
+  &-img {
+    background-color: #1B1D23;
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    top: -6rem;
+    left: 50%;
+    transform: translate(-50%);
+
+    @include mq(tablet) {
+      bottom: 0;
+      left: 0;
+      transform: translate(0);
+    }
+
+    img {
+      filter: brightness(0) invert(1);
+      width: 5.8rem;
+      height: 2.413rem;
+      margin: 4.9rem 3rem 4.687rem 3.2rem;
+    }
+  }
+
+  &-content {
+    padding: 9.3rem 0 3.1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3.2rem;
+
+    @include mq(tablet) {
+      flex-direction: row;
+      align-items: center;
+      gap: 6.1rem;
+      padding: 0;
+    }
+    
+    li {
+      color: #7D828F;
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  &-button {
+    padding-left: 3.7rem;
+    width: 25.2rem;
+    margin: auto;
+  }
+}

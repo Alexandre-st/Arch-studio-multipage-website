@@ -11,7 +11,7 @@ import SmTeamDesktop from '../assets/home/desktop/image-small-team.jpg';
 const Home = () => {
   return ( 
     <main>
-      <section className="home-hero">
+      <section className="home-hero container-img">
         <div className="home-hero-content">
           <picture>
             <source srcSet={ParamourDesktop} media="(min-width: 1024px)" />
@@ -46,7 +46,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="infos">
+      <section className="infos container-img">
         <div className="infos-content">
           <picture>
             <source srcSet={SmTeamDesktop} media="(min-width: 1024px)" />
@@ -60,7 +60,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="featured">
+      <section className="featured container">
         <h4 className="mid-title">Featured</h4>
         <div className="featured-content">
           <div className="image-container">

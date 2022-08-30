@@ -2,19 +2,20 @@
 
 .header {
   &-container {
-    margin: 3.2rem 0;
+    // margin: 3.2rem 0;
+    padding: 3.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     @include mq(tablet) {
-      margin: 5.6rem 0;
+      padding: 5.6rem;
       justify-content: flex-start;
     }
 
-    // @include mq(desktop) {
-    //   margin: 5.6rem 16.4rem;
-    // }
+    @include mq(desktop) {
+      // margin: 5.6rem 16.4rem;
+    }
 
     &-logo {
       width: 7.7rem;

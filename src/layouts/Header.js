@@ -1,9 +1,12 @@
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import ArcLogo from '../assets/logo.svg';
 import Menu from '../components/Menu';
 
 const Header = () => {
+
+  const { roads } = useParams();
+
   return ( 
     <header className="header">
       <div className="header-container container">
