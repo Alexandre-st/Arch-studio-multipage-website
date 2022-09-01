@@ -76,7 +76,6 @@
       font-size: 25rem;
       line-height: 20rem;
       letter-spacing: -5px;
-      // position: absolute;
     }
   }
 
@@ -95,20 +94,77 @@
 .infos {
   margin-top: 11.3rem;
 
+  @include mq(tablet) {
+    margin: 23.3rem 9.8rem 0 9.7rem;
+  }
+
+  @include mq(desktop) {
+    margin: auto;
+    margin-top: 20rem;
+  }
+
   &-content {
     position: relative;
 
+    &-img {
+      @include mask-image;
+    }
+
     &-text {
-      display: none;
+      position: absolute;
+      top: 55.53%;
+      transform: translate(0, -55.53%);
+      margin-left: 3.2rem;
+      z-index: 2;
+      
+      @include mq(tablet) {
+        margin-left: 5.8rem;
+      }
+      
+      @include mq(laptop) {
+        margin-left: 19rem;
+      }
+      
+      @include mq(laptop) {
+        transform: translate(0, -64.53%);
+      }
+      h3 {
+        color: #FFFFFF;
+      }
+
+      &-button {
+        width: 18.7rem;
+        padding-left: 3.5rem;
+        margin-top: 2.3rem;
+
+        @include mq(laptop) {
+          margin-top: 2.7rem;
+        }
+      }
     }
   }
 }
 
 // == Featured section
-.section {
+.featured {
   margin-top: 7.3rem;
 
+  @include mq(tablet) {
+    margin-top: 20rem;
+  }
+
   &-content {
-    margin-top: 4.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    @include mq(tablet) {
+      margin-top: -0.5rem;
+    }
+
+    @include mq(laptop) {
+      flex-direction: row;
+      gap: 3rem;
+    }
   }
 }

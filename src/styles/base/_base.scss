@@ -38,11 +38,61 @@ h1, h2, h3, h4 {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2.5rem;
-  padding: 2.5rem 0 2.2rem 0;
+  padding: 2.5rem 0 2.2rem 0rem;
 
   img {
     filter: brightness(0) invert(1);
     width: 2.4rem; 
     height: 1.8rem; 
+  }
+}
+
+// Styles for the different images for the home page and the portfolio
+.image-container {
+  position: relative;
+  
+  &-img {
+    @include background-image;
+    
+    img {
+      background: #E1E1E1;
+    }
+  }
+
+  &-content {
+    position: absolute;
+    top: 41.83%;
+    margin-left: 2.4rem;
+    color: #FFFFFF;
+
+    @include mq(tablet) {
+      margin-left: 4rem;
+      top: 57.08;
+    }
+
+    .text-opacity {
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      opacity: 0.75;
+      margin-top: -5rem;
+    }
+  }
+
+  .big-number {
+    display: none;
+
+    @include mq(tablet) {
+      display: block;
+      position: absolute;
+      top: 2.9rem;
+      right: 1.6rem;
+      font-weight: 700;
+      font-size: 25rem;
+      line-height: 20rem;
+      letter-spacing: -5px;
+      color: #FFFFFF;
+      opacity: 0.5;
+    }
   }
 }

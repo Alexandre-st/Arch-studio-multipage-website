@@ -16,3 +16,27 @@
     }
   }
 }
+
+@mixin mask-image {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 1;
+  }
+}
+
+@mixin background-image {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%);
+  }
+}

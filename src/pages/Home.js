@@ -6,7 +6,17 @@ import ParamourDesktop from '../assets/home/desktop/image-hero-paramour.jpg';
 import WelcomeImg from '../assets/home/desktop/image-welcome.jpg';
 import SmTeamMobile from '../assets/home/mobile/image-small-team.jpg' ;
 import SmTeamTablet from '../assets/home/tablet/image-small-team.jpg' ;
-import SmTeamDesktop from '../assets/home/desktop/image-small-team.jpg'; 
+import SmTeamDesktop from '../assets/home/desktop/image-small-team.jpg';
+import DelSolMobile from '../assets/portfolio/mobile/image-del-sol.jpg';
+import DelSolTablet from '../assets/portfolio/tablet/image-del-sol.jpg';
+import DelSolDesktop from '../assets/portfolio/desktop/image-del-sol.jpg';
+import TowerMobile from '../assets/portfolio/mobile/image-228b.jpg';
+import TowerTablet from '../assets/portfolio/tablet/image-228b.jpg';
+import TowerDesktop from '../assets/portfolio/desktop/image-228b.jpg';
+import PrototypeMobile from '../assets/portfolio/mobile/image-prototype.jpg';
+import PrototypeTablet from '../assets/portfolio/tablet/image-prototype.jpg';
+import PrototypeDesktop from '../assets/portfolio/desktop/image-prototype.jpg';
+import Arrow from '../assets/icons/icon-arrow.svg'; 
 
 const Home = () => {
   return ( 
@@ -48,41 +58,67 @@ const Home = () => {
 
       <section className="infos container-img">
         <div className="infos-content">
-          <picture>
+          <picture className="infos-content-img">
             <source srcSet={SmTeamDesktop} media="(min-width: 1024px)" />
             <source srcSet={SmTeamTablet} media="(min-width: 768px)" />
             <img src={SmTeamMobile} alt="Project Paramour" />
           </picture>
           <div className="infos-content-text">
-            <h3 className="mid-title">Small team, big ideas</h3>
-            <Link to='/'>About Us</Link>
+            <h3 className="mid-title">Small team,<br /> big ideas</h3>
+            <Link className="infos-content-text-button button" to='/'>
+              <p>About Us</p>
+              <img src={Arrow} alt="Arrow link" />
+            </Link>
           </div>
         </div>
       </section>
 
       <section className="featured container">
-        <h4 className="mid-title">Featured</h4>
+        <div className="featured-title">
+          <h4 className="mid-title">Featured</h4>
+        </div>
         <div className="featured-content">
           <div className="image-container">
-            {/* <img src={} alt="" /> */}
+            <picture className="image-container-img">
+              <source srcSet={DelSolDesktop} media="(min-width: 1024px)" />
+              <source srcSet={DelSolTablet} media="(min-width: 768px)" />
+              <img src={DelSolMobile} alt="Project Del Sol" />
+            </picture>
             <div className="image-container-content">
-              <h5 className='lil-title'>Project Del Sol</h5>
-              <p className="text text-opacity">View All Projects</p>
+              <div className="image-container-content-text">
+                <h5 className='lil-title'>Project Del Sol</h5>
+                <p className="text text-opacity">View All Projects</p>
+              </div>
             </div>
+            <span className="big-number">1</span>
           </div>
           <div className="image-container">
-            {/* <img src={} alt="" /> */}
+            <picture className="image-container-img">
+              <source srcSet={TowerDesktop} media="(min-width: 1024px)" />
+              <source srcSet={TowerTablet} media="(min-width: 768px)" />
+              <img src={TowerMobile} alt="228B Tower" />
+            </picture>
             <div className="image-container-content">
-              <h5 className='lil-title'>228B Tower</h5>
-              <p className="text text-opacity">View All Projects</p>
+              <div className="image-container-content-text">
+                <h5 className='lil-title'>228B Tower</h5>
+                <p className="text text-opacity">View All Projects</p>
+              </div>
             </div>
+            <span className="big-number">2</span>
           </div>
           <div className="image-container">
-            {/* <img src={} alt="" /> */}
+            <picture className="image-container-img">
+              <source srcSet={PrototypeDesktop} media="(min-width: 1024px)" />
+              <source srcSet={PrototypeTablet} media="(min-width: 768px)" />
+              <img src={PrototypeMobile} alt="Le Prototype" />
+            </picture>
             <div className="image-container-content">
-              <h5 className='lil-title'>Le Prototype</h5>
-              <p className="text text-opacity">View All Projects</p>
+              <div className="image-container-content-text">
+                <h5 className='lil-title'>Le Prototype</h5>
+                <p className="text text-opacity">View All Projects</p>
+              </div>
             </div>
+            <span className="big-number">3</span>
           </div>
         </div>
       </section>
