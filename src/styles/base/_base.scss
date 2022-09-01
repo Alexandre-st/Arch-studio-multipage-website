@@ -67,7 +67,15 @@ h1, h2, h3, h4 {
 
     @include mq(tablet) {
       margin-left: 4rem;
-      top: 57.08;
+      top: 33.83%;
+    }
+
+    @include mq(laptop) {
+      top: 65.67%;
+    }
+    
+    @include mq(desktop) {
+      top: 71.67%;
     }
 
     .text-opacity {
@@ -93,6 +101,11 @@ h1, h2, h3, h4 {
       letter-spacing: -5px;
       color: #FFFFFF;
       opacity: 0.5;
+    }
+
+    @include mq(laptop) {
+      top: 4.5rem;
+      right: -1rem;
     }
   }
 }

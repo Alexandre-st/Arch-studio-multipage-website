@@ -76,6 +76,10 @@ const Home = () => {
       <section className="featured container">
         <div className="featured-title">
           <h4 className="mid-title">Featured</h4>
+          <Link className="featured-button button" to='/'>
+            <p>See All</p>
+            <img src={Arrow} alt="Arrow link" />
+          </Link>
         </div>
         <div className="featured-content">
           <div className="image-container">
@@ -121,6 +125,10 @@ const Home = () => {
             <span className="big-number">3</span>
           </div>
         </div>
+        <Link className="featured-button-bottom button" to='/'>
+          <p>See All</p>
+          <img src={Arrow} alt="Arrow link" />
+        </Link>
       </section>
     </main>
   );
