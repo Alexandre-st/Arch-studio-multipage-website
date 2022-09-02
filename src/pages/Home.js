@@ -65,7 +65,7 @@ const Home = () => {
           </picture>
           <div className="infos-content-text">
             <h3 className="mid-title">Small team,<br /> big ideas</h3>
-            <Link className="infos-content-text-button button" to='/'>
+            <Link className="infos-content-text-button button" to='/about'>
               <p>About Us</p>
               <img src={Arrow} alt="Arrow link" />
             </Link>

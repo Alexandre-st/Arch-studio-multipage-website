@@ -1,0 +1,83 @@
+
+import MHero from '../assets/about/mobile/image-hero.jpg';
+import THero from '../assets/about/tablet/image-hero.jpg';
+import DHero from '../assets/about/desktop/image-hero.jpg';
+import Jake from '../assets/about/desktop/avatar-jake.jpg';
+import Thompson from '../assets/about/desktop/avatar-thompson.jpg';
+import Jackson from '../assets/about/desktop/avatar-jackson.jpg';
+import Maria from '../assets/about/desktop/avatar-maria.jpg';
+
+const About = () => {
+  return ( 
+    <main>
+      <section className="about-hero">
+        <div className="container-img">
+          <div className="about-hero-content">
+            <picture className="about-hero-content-img">
+              <source srcSet={DHero} media='(min-width: 1024px)' />
+              <source srcSet={THero} media='(min-width: 768px)' />
+              <img src={MHero} alt="Professional working on his device" />
+            </picture>
+            <div className="rectangle" />
+            <div className="about-hero-content-text">
+              <h1 className="big-title">Your team of professionals</h1>
+              <p className="text text-grey">Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="heritage">
+        <div className="container">
+          <div className="welcome-border" />
+          <div className="heritage-content">
+            <h2 className="mid-title">Our<br />Heritage</h2>
+            <p className="text text-grey">
+            Founded in 2007, we started as a trio of architects. Our complimentary skills and relentless attention to detail turned Arch into one of the most sought after boutique firms in the country.<br /><br />
+            Speciliazing in Urban Design allowed us to focus on creating exceptional structures that live in harmony with their surroundings. We consider every detail from every surrounding element to inform our designs.<br /><br />
+            Our small team of world-class professionals provides input on every project.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="leaders container">
+          <h3 className="mid-title">The<br />Leaders</h3>
+          <div className="leaders-container">
+            <div className="leaders-content">
+              <img className="leaders-content-img" src={Jake} alt="Jake Richards" />
+              <div className="leaders-content-text">
+                <h5 className="lil-title">Jake Richards</h5>
+                <p className="text text-grey">Chief Architect</p>
+              </div>
+            </div>
+            <div className="leaders-content">
+              <img className="leaders-content-img" src={Thompson} alt="Thompson Smith" />
+              <div className="leaders-content-text">
+                <h5 className="lil-title">Thompson Smith</h5>
+                <p className="text text-grey">Head of Finance</p>
+              </div>
+            </div>
+            <div className="leaders-content">
+              <img className="leaders-content-img" src={Jackson} alt="Jackson Rourke" />
+              <div className="leaders-content-text">
+                <h5 className="lil-title">Jackson Rourke</h5>
+                <p className="text text-grey">Lead Designer</p>
+              </div>
+            </div>
+            <div className="leaders-content">
+              <img className="leaders-content-img" src={Maria} alt="Maria Simpson" />
+              <div className="leaders-content-text">
+                <h5 className="lil-title">Maria Simpson</h5>
+                <p className="text text-grey"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
+ 
+export default About;

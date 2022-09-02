@@ -1,0 +1,72 @@
+@use '../variables/mixins' as *;
+
+.about-hero {
+
+  &-content {
+    position: relative;
+
+    .rectangle {
+      background-color: #FFFFFF;
+      position: relative;
+      top: -4rem;
+      width: 91.46%;
+      height: 4.5rem;
+    }
+
+
+    &-text {
+      margin: -2rem 3.2rem 0 3.2rem;
+
+      p {
+        margin-top: 2.1rem;
+      }
+    }
+  }
+}
+
+// == Section Heritage
+.heritage {
+  margin-top: 7.6rem;
+
+  &-content {
+
+    p {
+      margin-top: 2.2rem;
+    }
+  }
+}
+
+// == Section Leaders
+.leaders {
+  margin-top: 11.2rem;
+  
+  &-container {
+    margin-top: 5.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 7.9rem;
+    column-gap: 1.1rem;
+    
+    @include mq(tablet) {
+      flex-wrap: wrap;
+      column-gap: 1.1rem;
+      row-gap: 10rem;
+    }
+  }
+
+  &-content {
+    width: 31.1rem;
+
+    @include mq(tablet) {
+      width: 28rem;
+    }
+
+    &-text {
+      margin-top: -4rem;
+
+      p {
+        margin-top: -5rem;
+      }
+    }
+  }
+}
