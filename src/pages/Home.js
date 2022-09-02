@@ -33,7 +33,7 @@ const Home = () => {
             <p className="text">
               Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.
             </p>
-            <Link to='/'>See Our Portfolio</Link>
+            <Link to='/portfolio'>See Our Portfolio</Link>
           </div>
         </div>
       </section>
@@ -76,7 +76,7 @@ const Home = () => {
       <section className="featured container">
         <div className="featured-title">
           <h4 className="mid-title">Featured</h4>
-          <Link className="featured-button button" to='/'>
+          <Link className="featured-button button" to='/portfolio'>
             <p>See All</p>
             <img src={Arrow} alt="Arrow link" />
           </Link>
@@ -125,7 +125,7 @@ const Home = () => {
             <span className="big-number">3</span>
           </div>
         </div>
-        <Link className="featured-button-bottom button" to='/'>
+        <Link className="featured-button-bottom button" to='/portfolio'>
           <p>See All</p>
           <img src={Arrow} alt="Arrow link" />
         </Link>

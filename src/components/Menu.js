@@ -22,7 +22,7 @@ const Menu = () => {
             <nav className="nav-content">
               <ul className="nav-list">
                 <li className="nav-list-link">
-                  <Link to="/">Portfolio</Link>
+                  <Link to="/portfolio">Portfolio</Link>
                 </li>
                 <li className="nav-list-link">
                   <Link to="/">About Us</Link>

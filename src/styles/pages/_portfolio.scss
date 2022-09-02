@@ -1,0 +1,12 @@
+@use '../variables/mixins' as *;
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  @include mq(laptop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
