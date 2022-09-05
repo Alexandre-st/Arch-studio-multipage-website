@@ -1,11 +1,16 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import ArcLogo from '../assets/logo.svg';
 import Menu from '../components/Menu';
 
 const Header = () => {
 
-  const { roads } = useParams();
+  // const { roads } = useParams();
+
+  const activeStyle = { 
+    fontWeight : 'bold',
+    color: '#1B1D23'
+  };
 
   return ( 
     <header className="header">
@@ -16,9 +21,15 @@ const Header = () => {
 
         <nav className="header-nav">
           <ul className="header-nav-list">
-            <li>Portfolio</li>
-            <li>About Us</li>
-            <li>Contact</li>
+            <li>
+              <NavLink style={({ isActive }) => isActive ? activeStyle : undefined } to='/portfolio'>Portfolio</NavLink>
+            </li>
+            <li>
+              <NavLink style={({ isActive }) => isActive ? activeStyle : undefined } to='/about'>About Us</NavLink>
+            </li>
+            <li>
+              <NavLink style={({ isActive }) => isActive ? activeStyle : undefined } to='contact'>Contact</NavLink>
+            </li>
           </ul>
         </nav>
 

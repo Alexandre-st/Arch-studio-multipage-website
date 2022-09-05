@@ -49,6 +49,22 @@
         font-weight: 700;
         color: #7D828F;
       }
+
+      li {
+        position: relative;
+
+        a.active {
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translate(-50%);
+            width: 2.4rem;
+            border-bottom: 1px solid #1B1D23;
+          }
+        }
+      }
     }
   }
 }

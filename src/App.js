@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import ScrollToTop from './ScrollToTop';
 import Header from './layouts/Header';
 import Home from './pages/Home';
 import PortFolio from './pages/Portfolio';
@@ -11,6 +12,7 @@ import './styles/index.scss';
 const App = () => {
   return ( 
     <Router>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route exact path='/' element={<Home />} />
