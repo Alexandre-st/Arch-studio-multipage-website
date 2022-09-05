@@ -1,9 +1,28 @@
 @use '../variables/mixins' as *;
 
+.hero-border {
+  display: none;
+
+  @include mq(tablet) {
+    display: block;
+    margin: -10rem 0 7.3rem 0;
+  }
+}
+
 .about-hero {
+
+  &-word {
+    position: relative;
+    top: -8.5rem;
+    right: -7.7rem;
+  }
 
   &-content {
     position: relative;
+
+    @include mq(tablet) {
+      margin: 0 9.8rem 0 9.7rem;
+    }
 
     .rectangle {
       background-color: #FFFFFF;
@@ -11,14 +30,38 @@
       top: -4rem;
       width: 91.46%;
       height: 4.5rem;
+      
+      @include mq(tablet) {
+        display: none;
+      }
     }
 
-
+    
+    
     &-text {
       margin: -2rem 3.2rem 0 3.2rem;
+      
+      @include mq(tablet) {
+        background-color: #FFFFFF;
+        position: absolute;
+        margin: 0;
+        bottom: 0;
+        left: 5.8rem;
+        height: 43.1rem;
+      }
+
+      &-background {
+        @include mq(tablet) {
+          margin-left:  5.9rem;
+        }
+      }
 
       p {
         margin-top: 2.1rem;
+
+        @include mq(tablet) {
+          margin-top: 3.8rem;
+        }
       }
     }
   }
@@ -27,6 +70,14 @@
 // == Section Heritage
 .heritage {
   margin-top: 7.6rem;
+
+  &-border {
+    margin-bottom: 6.8rem;
+
+    @include mq(tablet) {
+      margin-bottom: 3.9rem;
+    }
+  }
 
   &-content {
 

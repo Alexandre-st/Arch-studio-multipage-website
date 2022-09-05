@@ -40,8 +40,8 @@ const Home = () => {
 
       <section className="welcome container">
         <div className="welcome-content">
-          <div className="welcome-border" />
-          <p className="welcome-word">Welcome</p>
+          <div className="lil-border welcome-border" />
+          <p className="big-word welcome-word">Welcome</p>
           <h2 className="mid-title">Welcome to Arch Studio</h2>
           <div className="welcome-content-text">
             <p className="text">

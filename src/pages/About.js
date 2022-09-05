@@ -20,8 +20,12 @@ const About = () => {
             </picture>
             <div className="rectangle" />
             <div className="about-hero-content-text">
-              <h1 className="big-title">Your team of professionals</h1>
-              <p className="text text-grey">Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings.</p>
+              <div className="about-hero-content-text-background">
+                <span className="big-word about-hero-word">About</span>
+                <div className="lil-border hero-border" />
+                <h1 className="mid-title">Your team of professionals</h1>
+                <p className="text text-grey">Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -29,7 +33,7 @@ const About = () => {
 
       <section className="heritage">
         <div className="container">
-          <div className="welcome-border" />
+          <div className="lil-border heritage-border" />
           <div className="heritage-content">
             <h2 className="mid-title">Our<br />Heritage</h2>
             <p className="text text-grey">
