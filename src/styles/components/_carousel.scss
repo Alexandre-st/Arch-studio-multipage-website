@@ -1,0 +1,36 @@
+@use '../variables/mixins' as *;
+
+.swiper {
+    position: relative;
+
+    &-pagination-bullet {
+        display: none;
+    }
+}
+
+.home-hero-content {
+    position: relative;
+
+    &-img {
+        @include mask-image;
+    }
+
+    &-text {
+        position: absolute;
+        top: 11.6rem;
+        left: 3.2rem;
+        right: 3.2rem;
+        color:#FFFFFF;
+        z-index: 2;
+
+        &-title {
+            margin-bottom: 1.1rem;
+        }
+    }
+
+    &-button {
+        width: 25.2rem;
+        padding-left: 3.7rem;
+        margin-top: 5.9rem;
+    }
+}

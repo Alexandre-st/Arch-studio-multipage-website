@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import ParamourMobile from '../assets/home/mobile/image-hero-paramour.jpg'; 
-import ParamourTablet from '../assets/home/tablet/image-hero-paramour.jpg'; 
-import ParamourDesktop from '../assets/home/desktop/image-hero-paramour.jpg';
+import Carousel from '../components/Carousel';
 import WelcomeImg from '../assets/home/desktop/image-welcome.jpg';
 import SmTeamMobile from '../assets/home/mobile/image-small-team.jpg' ;
 import SmTeamTablet from '../assets/home/tablet/image-small-team.jpg' ;
@@ -22,20 +20,7 @@ const Home = () => {
   return ( 
     <main>
       <section className="home-hero container-img">
-        <div className="home-hero-content">
-          <picture>
-            <source srcSet={ParamourDesktop} media="(min-width: 1024px)" />
-            <source srcSet={ParamourTablet} media="(min-width: 768px)" />
-            <img src={ParamourMobile} alt="Project Paramour" />
-          </picture>
-          <div className="home-hero-content-text">
-            <h1 className="big-title">Project&nbsp;Paramour</h1>
-            <p className="text">
-              Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.
-            </p>
-            <Link to='/portfolio'>See Our Portfolio</Link>
-          </div>
-        </div>
+        <Carousel />
       </section>
 
       <section className="welcome container">

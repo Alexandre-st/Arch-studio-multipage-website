@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import PortFolio from './pages/Portfolio';
 import About from './pages/About';
 import Footer from './layouts/Footer';
+import "swiper/css/bundle";
 import './styles/index.scss';
 
 const App = () => {

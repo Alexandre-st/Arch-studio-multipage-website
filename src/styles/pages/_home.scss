@@ -1,14 +1,5 @@
 @use '../variables/mixins' as *;
 
-// == Hero Part for the HomePage
-.home-hero {
-  &-content {
-    &-text {
-      display: none;
-    }
-  }
-}
-
 // == Welcome section 
 .welcome {
   margin-top: 7.2rem;
