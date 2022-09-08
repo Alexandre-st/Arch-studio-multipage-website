@@ -16,7 +16,8 @@ const Carousel = () => {
   const pagination = {
     clickable: true,
     renderBullet: function(index, className) {
-      return '<span class="' + className + '">0' + (index + 1) + "</span>'";
+      return '<span class="' + className + '">0' + (index + 1) + "</span>";
+      // '<span class="' + className + '">0 + (index + 1) + "</span>";
     }
   };
 
@@ -28,6 +29,10 @@ const Carousel = () => {
         slidesPerView={1}
         pagination={pagination}
         effect='fade'
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
       >
       {slides.map((slide, index) => {
         return (

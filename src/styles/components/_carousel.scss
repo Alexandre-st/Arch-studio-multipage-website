@@ -2,35 +2,112 @@
 
 .swiper {
     position: relative;
+    overflow: visible;
 
     &-pagination-bullet {
         display: none;
+
+        @include mq(laptop) {
+            display: block;
+        }
     }
 }
 
-.home-hero-content {
+// Bullet's parents 
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: flex;
+    bottom: 0;
+    left: -7.6rem;
+  }
+  
+  // To remove the margin between the bullets
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 -1px 0px -1px;
+  }
+
+  // To modify the background of the bullet pagination
+
+  @include mq(laptop) {
+      .swiper-pagination-bullet {
+          background-color: #fff;
+          color: #7D828F;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 8rem;
+          width: 8rem;
+          font-size: 1.8rem;
+          font-weight: 700;
+          border-radius: 0%;
+          opacity: 1;
+        
+          &-active {
+            background-color: #000;
+            color: #fff; 
+          }
+      }
+  }
+
+.home-hero {
+    
+    &-content {
     position: relative;
 
-    &-img {
-        @include mask-image;
+    @include mq(tablet) {
+        margin: 0 9.7rem 0 9.8em;
     }
 
-    &-text {
-        position: absolute;
-        top: 11.6rem;
-        left: 3.2rem;
-        right: 3.2rem;
-        color:#FFFFFF;
-        z-index: 2;
-
-        &-title {
-            margin-bottom: 1.1rem;
+    @include mq(desktop) {
+        margin: 0
+    }
+    
+        &-img {
+            @include mask-image;
         }
-    }
+        
+        &-text {
+            position: absolute;
+            top: 20.74%;
+            left: 3.2rem;
+            right: 3.2rem;
+            color:#FFFFFF;
+            z-index: 2;
 
-    &-button {
-        width: 25.2rem;
-        padding-left: 3.7rem;
-        margin-top: 5.9rem;
+            @include mq(tablet) {
+                top: 25.83%;
+                left: 5.8rem;
+                right: 5.8rem;
+            }
+
+            @include mq(laptop) {
+                top: 9rem;
+                left: 14rem;
+                right: 19.6rem;
+            }
+
+            @include mq(desktop) {
+                top: 18.6rem;
+                left: 19rem;
+                right: 37.6rem;
+            }
+
+            p {
+                max-width: 44.5rem;
+            }
+        
+            &-title {
+                margin-bottom: 1.1rem;
+            }
+        }
+        
+        &-button {
+            width: 25.2rem;
+            padding-left: 3.7rem;
+            margin-top: 5.9rem;
+
+            @include mq(tablet) {
+                margin-top: 4.1rem;
+            }
+        }
     }
 }
