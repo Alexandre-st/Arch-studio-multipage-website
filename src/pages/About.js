@@ -13,18 +13,24 @@ const About = () => {
       <section className="about-hero">
         <div className="container-img">
           <div className="about-hero-content">
-            <picture className="about-hero-content-img">
-              <source srcSet={DHero} media='(min-width: 1024px)' />
-              <source srcSet={THero} media='(min-width: 768px)' />
-              <img src={MHero} alt="Professional working on his device" />
-            </picture>
+            <div className="about-hero-content-img">
+              <picture>
+                <source srcSet={DHero} media='(min-width: 1024px)' />
+                <source srcSet={THero} media='(min-width: 768px)' />
+                <img src={MHero} alt="Professional working on his device" />
+              </picture>
+            </div>
             <div className="rectangle" />
-            <div className="about-hero-content-text">
-              <div className="about-hero-content-text-background">
+            <div className="about-hero-content-infos">
+              <div className="about-hero-content-infos-background">
                 <span className="big-word about-hero-word">About</span>
-                <div className="lil-border hero-border" />
-                <h1 className="mid-title">Your team of professionals</h1>
-                <p className="text text-grey">Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings.</p>
+                <div className="about-hero-content-infos-text">
+                  <div className="lil-border hero-border" />
+                  <h1 className="mid-title">Your team of professionals</h1>
+                  <p className="text text-grey">
+                    Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -74,7 +80,7 @@ const About = () => {
               <img className="leaders-content-img" src={Maria} alt="Maria Simpson" />
               <div className="leaders-content-text">
                 <h5 className="lil-title">Maria Simpson</h5>
-                <p className="text text-grey"></p>
+                <p className="text text-grey">Senior Architect</p>
               </div>
             </div>
           </div>

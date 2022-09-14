@@ -5,7 +5,14 @@
 
   @include mq(tablet) {
     display: block;
-    margin: -10rem 0 7.3rem 0;
+    margin: -10.7rem 0 7.3rem 0;
+  }
+
+  @include mq(laptop) {
+    margin: -8.2rem 0 5.7rem 0;
+  }
+  @include mq(desktop) {
+    margin: -3rem 0 5.7rem 0;
   }
 }
 
@@ -15,6 +22,10 @@
     position: relative;
     top: -8.5rem;
     right: -7.7rem;
+
+    @include mq(laptop) {
+      right: 1.3rem;
+    }
   }
 
   &-content {
@@ -24,35 +35,72 @@
       margin: 0 9.8rem 0 9.7rem;
     }
 
+    @include mq(laptop) {
+      display: flex;
+    }
+
+    @include mq(desktop) {
+      margin: 0;
+    }
+
+    &-img {
+      position: relative;
+
+      picture {
+        @include mask-image;
+      }
+    }
+
     .rectangle {
       background-color: #FFFFFF;
       position: relative;
       top: -4rem;
       width: 91.46%;
       height: 4.5rem;
+      z-index: 2;
       
       @include mq(tablet) {
         display: none;
       }
     }
 
-    
-    
-    &-text {
+    &-infos {
       margin: -2rem 3.2rem 0 3.2rem;
+      z-index: 2;
       
       @include mq(tablet) {
         background-color: #FFFFFF;
         position: absolute;
-        margin: 0;
+        margin: -1px;
         bottom: 0;
         left: 5.8rem;
         height: 43.1rem;
       }
 
+      @include mq(laptop) {
+        height: 44rem;
+        left: 23rem;
+      }
+
+      @include mq(desktop) {
+        height: 50.3rem;
+        left: 47.5rem;
+      }
+
       &-background {
         @include mq(tablet) {
           margin-left:  5.9rem;
+        }
+
+        @include mq(laptop) {
+          margin-left: 0;
+        }
+      }
+
+      &-text {
+        @include mq(laptop) {
+          width: 44.6rem;
+          margin-left: auto;
         }
       }
 
@@ -62,6 +110,10 @@
         @include mq(tablet) {
           margin-top: 3.8rem;
         }
+
+        @include mq(desktop) {
+          margin-top: 4.9rem;
+        }
       }
     }
   }
@@ -70,6 +122,10 @@
 // == Section Heritage
 .heritage {
   margin-top: 7.6rem;
+
+  @include mq(tablet) {
+    margin-top: 20rem;
+  }
 
   &-border {
     margin-bottom: 6.8rem;
@@ -90,6 +146,20 @@
 // == Section Leaders
 .leaders {
   margin-top: 11.2rem;
+
+  @include mq(tablet) {
+    margin-top: 20rem;
+
+  }
+
+  @include mq(laptop) {
+    display: flex;
+    gap: 8%;
+  }
+
+  @include mq(desktop) {
+    gap: 12%;
+  }
   
   &-container {
     margin-top: 5.5rem;
@@ -99,9 +169,14 @@
     column-gap: 1.1rem;
     
     @include mq(tablet) {
-      flex-wrap: wrap;
-      column-gap: 1.1rem;
       row-gap: 10rem;
+    }
+    
+    @include mq(laptop) {
+      margin-top: 0;
+      row-gap: 6.3rem;
+      column-gap: 3rem;
+      max-width: 73rem;
     }
   }
 
@@ -110,6 +185,14 @@
 
     @include mq(tablet) {
       width: 28rem;
+    }
+
+    @include mq(laptop) {
+      width: 25rem;
+    }
+
+    @include mq(desktop) {
+      width: 35rem;
     }
 
     &-text {

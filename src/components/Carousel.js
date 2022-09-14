@@ -17,7 +17,6 @@ const Carousel = () => {
     clickable: true,
     renderBullet: function(index, className) {
       return '<span class="' + className + '">0' + (index + 1) + "</span>";
-      // '<span class="' + className + '">0 + (index + 1) + "</span>";
     }
   };
 

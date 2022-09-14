@@ -1,5 +1,6 @@
 @use '../variables/mixins' as *;
 
+// The parent swiper
 .swiper {
     position: relative;
     overflow: visible;
@@ -25,9 +26,8 @@
     margin: 0 -1px 0px -1px;
   }
 
-  // To modify the background of the bullet pagination
-
   @include mq(laptop) {
+      // To modify the background of the bullet pagination
       .swiper-pagination-bullet {
           background-color: #fff;
           color: #7D828F;
