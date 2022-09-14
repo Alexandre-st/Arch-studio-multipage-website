@@ -17,7 +17,6 @@
 }
 
 .about-hero {
-
   &-word {
     position: relative;
     top: -8.5rem;
@@ -127,18 +126,39 @@
     margin-top: 20rem;
   }
 
+  @include mq(laptop) {
+    display: flex;
+    gap: 6.4rem;
+    align-items: center;
+  }
+
+  @include mq(desktop) {
+    gap: 12.4rem;
+  }
+
   &-border {
     margin-bottom: 6.8rem;
 
     @include mq(tablet) {
       margin-bottom: 3.9rem;
     }
+
+    @include mq(laptop) {
+      margin-bottom: 8.2rem;
+    }
   }
 
   &-content {
 
+    @include mq(laptop) {
+      max-width: 44.6rem;
+    }
     p {
       margin-top: 2.2rem;
+
+      @include mq(laptop) {
+        margin-top: 5.1rem;
+      }
     }
   }
 }
@@ -149,7 +169,6 @@
 
   @include mq(tablet) {
     margin-top: 20rem;
-
   }
 
   @include mq(laptop) {

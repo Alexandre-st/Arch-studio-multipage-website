@@ -1,4 +1,3 @@
-
 import MHero from '../assets/about/mobile/image-hero.jpg';
 import THero from '../assets/about/tablet/image-hero.jpg';
 import DHero from '../assets/about/desktop/image-hero.jpg';
@@ -6,6 +5,7 @@ import Jake from '../assets/about/desktop/avatar-jake.jpg';
 import Thompson from '../assets/about/desktop/avatar-thompson.jpg';
 import Jackson from '../assets/about/desktop/avatar-jackson.jpg';
 import Maria from '../assets/about/desktop/avatar-maria.jpg';
+import Heritage from '../assets/about/desktop/image-heritage.jpg';
 
 const About = () => {
   return ( 
@@ -37,16 +37,21 @@ const About = () => {
         </div>
       </section>
 
-      <section className="heritage">
-        <div className="container">
-          <div className="lil-border heritage-border" />
-          <div className="heritage-content">
-            <h2 className="mid-title">Our<br />Heritage</h2>
-            <p className="text text-grey">
-            Founded in 2007, we started as a trio of architects. Our complimentary skills and relentless attention to detail turned Arch into one of the most sought after boutique firms in the country.<br /><br />
-            Speciliazing in Urban Design allowed us to focus on creating exceptional structures that live in harmony with their surroundings. We consider every detail from every surrounding element to inform our designs.<br /><br />
-            Our small team of world-class professionals provides input on every project.
-            </p>
+      <section>
+        <div className="heritage container">
+          <div className="right-content">
+            <div className="lil-border heritage-border" />
+            <div className="heritage-content">
+              <h2 className="mid-title">Our<br />Heritage</h2>
+              <p className="text text-grey">
+              Founded in 2007, we started as a trio of architects. Our complimentary skills and relentless attention to detail turned Arch into one of the most sought after boutique firms in the country.<br /><br />
+              Speciliazing in Urban Design allowed us to focus on creating exceptional structures that live in harmony with their surroundings. We consider every detail from every surrounding element to inform our designs.<br /><br />
+              Our small team of world-class professionals provides input on every project.
+              </p>
+            </div>
+          </div>
+          <div className="left-content">
+            <img className="heritage-img" src={Heritage} alt='Heritage building'  />
           </div>
         </div>
       </section>
