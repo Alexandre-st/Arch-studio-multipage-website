@@ -1,0 +1,69 @@
+import Map from '../components/Map';
+
+import MHero from '../assets/contact/mobile/image-hero.jpg';
+import THero from '../assets/contact/tablet/image-hero.jpg';
+import DHero from '../assets/contact/desktop/image-hero.jpg';
+
+const Contact = () => {
+  return (
+    <main>
+      <section className="about-hero">
+        <div className="container-img">
+          <div className="about-hero-content">
+            <div className="about-hero-content-img">
+              <picture>
+                <source srcSet={DHero} media='(min-width: 1024px)' />
+                <source srcSet={THero} media='(min-width: 768px)' />
+                <img src={MHero} alt="Professional working on his device" />
+              </picture>
+            </div>
+            <div className="rectangle" />
+            <div className="about-hero-content-infos">
+              <div className="about-hero-content-infos-background">
+                <span className="big-word about-hero-word">Contact</span>
+                <div className="about-hero-content-infos-text">
+                  <div className="lil-border hero-border" />
+                  <h1 className="mid-title">Tell us about your project</h1>
+                  <p className="text text-grey">
+                    We’d love to hear more about your project. Please, leave a message below or give us a call. We have two offices, one in Texas and one in Tennessee. If you find yourself nearby, come say hello!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Details section */}
+      <section className="details">
+        <div className="container">
+          <h2 className="mid-title">Contact<br />Details</h2>
+          <div className="details-content">
+            <div className="details-content-text">
+              <h4 className="details-content-text-title">Main Office</h4>
+              <div className="details-content-text-infos">
+                <p className="text-grey">Mail : archone@mail.com</p>
+                <p className="text-grey">Adress : 1892  Chenoweth Drive TN</p>
+                <p className="text-grey">Phone : 123-456-3451</p>
+              </div>
+              <p>Futur bouton</p>
+            </div>
+            <div className="details-content-text">
+              <h4 className="details-content-text-title">Office II</h4>
+              <div className="details-content-text-infos">
+                <p className="text-grey">Mail : archtwo@mail.com</p>
+                <p className="text-grey">Adress : 3399  Wines Lane TX</p>
+                <p className="text-grey">Phone : 832-123-4321</p>
+              </div>
+              <p>Futur bouton</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Map />
+    </main>
+  )
+};
+
+export default Contact;
