@@ -1,0 +1,73 @@
+@use '../variables/mixins' as *;
+
+.form {
+  margin-top: 7.3rem;
+
+  &-content {
+    margin-top: 4.2rem;
+
+    // Same style for the input and textarea elements
+    &-input, &-aera {
+      border-bottom: 1px solid #1B1D23;
+      position: relative;
+
+      label {
+        visibility: hidden;
+      }
+
+      input, textarea {
+        width: 100%;
+        padding-left: 3.449rem;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        letter-spacing: -0.3125px;
+
+        @include mq(laptop) {
+          font-size: 2rem;
+        }
+        
+        &::placeholder {
+          font-weight: 700;
+          color: #C8CCD8;
+        }
+      }
+    }
+
+    // Deserve proper style for each elements
+    &-input {
+      margin-bottom: 4.3rem;
+
+      input {
+        height: 4.4rem;
+      }
+    }
+
+    &-aera {
+      textarea {
+        min-height: 9.2rem;
+      }
+    }
+
+    &-error {
+      position: absolute;
+      right: 0;
+      bottom: 1.5rem;
+      color: #DF5656;
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+      text-align: right;
+      letter-spacing: -0.28125px;
+
+      @include mq(laptop) {
+        font-size: 1.8rem
+      }
+    }
+  }
+
+  &-button {
+    width: 8rem;
+    margin-left: auto;
+    justify-content: center;
+  }
+}

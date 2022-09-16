@@ -1,4 +1,5 @@
 import Map from '../components/Map';
+import ContactForm from '../components/ContactForm';
 
 import MHero from '../assets/contact/mobile/image-hero.jpg';
 import THero from '../assets/contact/tablet/image-hero.jpg';
@@ -61,7 +62,16 @@ const Contact = () => {
         </div>
       </section>
 
-      <Map />
+      {/* Map Section */}
+      <section className="map container-img">
+        <Map />
+      </section>
+
+      {/* Contact Form section */}
+      <section className="form container">
+        <h3 className="mid-title">Connect with us</h3>
+        <ContactForm />
+      </section>
     </main>
   )
 };
