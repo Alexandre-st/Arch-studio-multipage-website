@@ -11,9 +11,10 @@
 @use './components/menu';
 @use './components/carousel';
 @use './components/map';
-@use './components/contact';
+@use './components/contactForm';
 
 // == PAGE == //
 @use './pages/home';
 @use './pages/portfolio';
 @use './pages/about';
+@use './pages/contact';

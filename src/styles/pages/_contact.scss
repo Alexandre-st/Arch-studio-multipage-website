@@ -1,0 +1,14 @@
+@use '../variables/mixins' as *;
+
+// Detail part
+.details {
+  margin-top: 10rem;
+
+  @include mq(tablet) {
+    margin-top: 20rem;
+  }
+
+  @include mq(laptop) {
+    margin-top: 27.5rem;
+  }
+}

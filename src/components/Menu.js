@@ -28,7 +28,7 @@ const Menu = () => {
                   <Link to="/about">About Us</Link>
                 </li>
                 <li className="nav-list-link">
-                  <Link to="/">Contact</Link>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </nav>
