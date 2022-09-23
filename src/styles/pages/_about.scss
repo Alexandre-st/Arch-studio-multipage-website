@@ -148,6 +148,15 @@
     }
   }
 
+  // To remove the image on small screen size
+  .left-content {
+    display: none;
+
+    @include mq(laptop) {
+      display: block;
+    }
+  }
+
   &-content {
 
     @include mq(laptop) {

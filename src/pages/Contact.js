@@ -8,10 +8,10 @@ import DHero from '../assets/contact/desktop/image-hero.jpg';
 const Contact = () => {
   return (
     <main>
-      <section className="about-hero">
+      <section className="contact-hero">
         <div className="container-img">
-          <div className="about-hero-content">
-            <div className="about-hero-content-img">
+          <div className="contact-hero-content">
+            <div className="contact-hero-content-img">
               <picture>
                 <source srcSet={DHero} media='(min-width: 1024px)' />
                 <source srcSet={THero} media='(min-width: 768px)' />
@@ -19,10 +19,10 @@ const Contact = () => {
               </picture>
             </div>
             <div className="rectangle" />
-            <div className="about-hero-content-infos">
-              <div className="about-hero-content-infos-background">
-                <span className="big-word about-hero-word">Contact</span>
-                <div className="about-hero-content-infos-text">
+            <div className="contact-hero-content-infos">
+              <div className="contact-hero-content-infos-background">
+                <span className="big-word contact-hero-word">Contact</span>
+                <div className="contact-hero-content-infos-text">
                   <div className="lil-border hero-border" />
                   <h1 className="mid-title">Tell us about your project</h1>
                   <p className="text text-grey">

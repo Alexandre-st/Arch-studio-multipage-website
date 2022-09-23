@@ -4,8 +4,13 @@
 // To give the map a size by default
 .leaflet-container {
   position: relative;
+  z-index: 1;
   width: 100%;
   height: 36.7rem;
+
+  @include mq(tablet) {
+    height: 56rem;
+  }
 }
 
 .map {
