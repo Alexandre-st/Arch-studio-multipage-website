@@ -1,18 +1,6 @@
 @use '../variables/mixins' as *;
 
-// Detail part
-.details {
-  margin-top: 10rem;
-
-  @include mq(tablet) {
-    margin-top: 20rem;
-  }
-
-  @include mq(laptop) {
-    margin-top: 27.5rem;
-  }
-}
-
+// Hero part
 .contact-hero {
 
   &-word {
@@ -116,3 +104,54 @@
     }
   }
 }
+
+// Contact Details part
+.details {
+  margin-top: 10rem;
+
+  @include mq(tablet) {
+    margin-top: 20rem;
+  }
+
+  @include mq(laptop) {
+    margin-top: 27.5rem;
+  }
+
+  &-content {
+    margin-top: 4rem;
+
+    @include mq(tablet) {
+      margin-top: 4.2rem;
+    }
+
+    @include mq(laptop) {
+      margin-top: 0;
+    }
+
+    &-text {
+
+
+      &-infos {
+        &-title {
+          margin-bottom: 1.4rem;
+        }
+      }
+
+      &-button {
+        display: flex;
+        gap: 2.4rem;
+        align-items: center;
+        margin-top: 4.3rem;
+
+        p {
+          font-weight: 700;
+        }
+
+        img {
+          width: fit-content;
+        }
+      }
+    }
+  }
+}
+

@@ -1,9 +1,11 @@
+import { HashLink } from 'react-router-hash-link';
 import Map from '../components/Map';
 import ContactForm from '../components/ContactForm';
 
 import MHero from '../assets/contact/mobile/image-hero.jpg';
 import THero from '../assets/contact/tablet/image-hero.jpg';
 import DHero from '../assets/contact/desktop/image-hero.jpg';
+import Arrow from '../assets/icons/icon-arrow.svg';
 
 const Contact = () => {
   return (
@@ -41,22 +43,28 @@ const Contact = () => {
           <h2 className="mid-title">Contact<br />Details</h2>
           <div className="details-content">
             <div className="details-content-text">
-              <h4 className="details-content-text-title">Main Office</h4>
               <div className="details-content-text-infos">
-                <p className="text-grey">Mail : archone@mail.com</p>
-                <p className="text-grey">Adress : 1892  Chenoweth Drive TN</p>
-                <p className="text-grey">Phone : 123-456-3451</p>
+                <h4 className="details-content-text-infos-title text-grey small-title">Main Office</h4>
+                <p className="text text-grey">Mail : archone@mail.com</p>
+                <p className="text text-grey">Adress : 1892  Chenoweth Drive TN</p>
+                <p className="text text-grey">Phone : 123-456-3451</p>
               </div>
-              <p>Futur bouton</p>
+              <HashLink className="details-content-text-button" smooth to='/contact/#map'>
+                <p className="text">View on Map</p>
+                <img src={Arrow} alt="Arrow" />
+              </HashLink>
             </div>
             <div className="details-content-text">
-              <h4 className="details-content-text-title">Office II</h4>
               <div className="details-content-text-infos">
-                <p className="text-grey">Mail : archtwo@mail.com</p>
-                <p className="text-grey">Adress : 3399  Wines Lane TX</p>
-                <p className="text-grey">Phone : 832-123-4321</p>
+                <h4 className="details-content-text-infos-title text-grey small-title">Office II</h4>
+                <p className="text text-grey">Mail : archtwo@mail.com</p>
+                <p className="text text-grey">Adress : 3399  Wines Lane TX</p>
+                <p className="text text-grey">Phone : 832-123-4321</p>
               </div>
-              <p>Futur bouton</p>
+              <HashLink className="details-content-text-button" smooth to='/contact/#map'>
+                <p className="text">View on Map</p>
+                <img src={Arrow} alt="Arrow" />
+              </HashLink>
             </div>
           </div>
         </div>

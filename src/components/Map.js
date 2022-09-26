@@ -17,6 +17,7 @@ const Map = () => {
         keyboard={false}
         touchZoom={false}
         dragging={false}
+        id="map"
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
