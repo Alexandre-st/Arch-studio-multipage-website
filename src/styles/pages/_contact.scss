@@ -117,6 +117,29 @@
     margin-top: 27.5rem;
   }
 
+  &-border {
+    margin-bottom: 6.9rem;
+
+    @include mq(tablet) {
+      margin-bottom: 4.9rem;
+    }
+
+    @include mq(laptop) {
+      margin-bottom: 7.3rem;
+    }
+  }
+
+  &-container {
+    @include mq(laptop) {
+      display: flex;
+      gap: 3rem;
+
+      h2 {
+        width: 35rem;
+      }
+    }
+  }
+
   &-content {
     margin-top: 4rem;
 
@@ -126,14 +149,38 @@
 
     @include mq(laptop) {
       margin-top: 0;
+      display: flex;
+      gap: 3rem;
     }
 
     &-text {
 
+      @include mq(tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      @include mq(laptop) {
+        display: block;
+      }
 
       &-infos {
+
+        @include mq(laptop) {
+          width: 25rem;
+        }
+
+        @include mq(desktop) {
+          width: 35rem;
+        }
+
         &-title {
           margin-bottom: 1.4rem;
+
+          @include mq(laptop) {
+            margin-top: 0;
+          }
         }
       }
 
@@ -142,6 +189,10 @@
         gap: 2.4rem;
         align-items: center;
         margin-top: 4.3rem;
+
+        @include mq(laptop) {
+          margin-top: 5.9rem;
+        }
 
         p {
           font-weight: 700;

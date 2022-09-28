@@ -29,10 +29,16 @@
 .location {
 
   @include mq(tablet) {
-    margin: 0 9.8rem 0 9.7rem;
+    padding: 0 9.8rem 0 9.7rem;
+  }
+
+  @include mq(laptop) {
+    padding: 0 0 0 9.7rem;
+    margin-right: 9.8rem;
   }
 
   @include mq(desktop) {
+    padding: 0;
     margin: 0;
   }
 }

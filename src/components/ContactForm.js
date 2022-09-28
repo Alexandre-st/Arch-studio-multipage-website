@@ -13,10 +13,11 @@ const ContactForm = () => {
     }, 
     validate: (values) => {
       const errors = {};
+      console.log(errors);
 
       if (!values.name) {
         errors.name = "Can't be empty";
-        console.log(values.name.trim());
+        
       }
       if (!values.email) {
         errors.email = "Can't be empty";
@@ -41,6 +42,7 @@ const ContactForm = () => {
           <label htmlFor="name">Name</label>
           <input type="text" placeholder="Name" {...formik.getFieldProps('name')} />
           {formik.touched.name && formik.errors.name && <p className="form-content-error error-input">{formik.errors.name}</p>}
+          {console.log(formik.errors)}
         </div>
         <div className="form-content-input">
           <label htmlFor="email">Email</label>

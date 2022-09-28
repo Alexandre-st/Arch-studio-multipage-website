@@ -3,8 +3,23 @@
 .form {
   margin-top: 7.3rem;
 
+  @include mq(laptop) {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+
+    h3 {
+      width: 35rem;
+    }
+  }
+
   &-content {
     margin-top: 4.2rem;
+
+    @include mq(laptop) {
+      margin-top: 0;
+      width: 73rem;
+    }
 
     // Same style for the input and textarea elements
     &-input, &-aera {

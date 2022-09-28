@@ -39,8 +39,11 @@ const Contact = () => {
 
       {/* Details section */}
       <section className="details">
-        <div className="container">
+        <div className="details-container container">
+        <div>
+          <div className="lil-border details-border" />
           <h2 className="mid-title">Contact<br />Details</h2>
+        </div>
           <div className="details-content">
             <div className="details-content-text">
               <div className="details-content-text-infos">
