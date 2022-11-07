@@ -1,0 +1,18 @@
+@use "../variables/mixins" as *;
+
+.modal {
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+
+  &-container {
+    position: relative;
+    padding: 2.4rem;
+    background-color: #fff;
+    border-radius: 15px;
+  }
+}

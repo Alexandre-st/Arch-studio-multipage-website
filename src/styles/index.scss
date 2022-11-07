@@ -1,20 +1,21 @@
 // == BASE == //
-@use './base/reset';
-@use './base/fonts';
-@use './base/base';
+@use "./base/reset";
+@use "./base/fonts";
+@use "./base/base";
 
 // == LAYOUTS == //
-@use './layouts/header';
-@use './layouts/footer';
+@use "./layouts/header";
+@use "./layouts/footer";
 
 // == COMPONENTS == //
-@use './components/menu';
-@use './components/carousel';
-@use './components/map';
-@use './components/contactForm';
+@use "./components/menu";
+@use "./components/carousel";
+@use "./components/map";
+@use "./components/contactForm";
+@use "./components/modal";
 
 // == PAGE == //
-@use './pages/home';
-@use './pages/portfolio';
-@use './pages/about';
-@use './pages/contact';
+@use "./pages/home";
+@use "./pages/portfolio";
+@use "./pages/about";
+@use "./pages/contact";
