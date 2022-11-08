@@ -1,20 +1,15 @@
-@use '../variables/mixins' as *;
+@use "../variables/mixins" as *;
 
 .header {
   &-container {
-    // margin: 3.2rem 0;
-    padding: 3.2rem;
+    margin: 3.2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     @include mq(tablet) {
-      padding: 5.6rem;
+      margin: 5.6rem auto;
       justify-content: flex-start;
-    }
-
-    @include mq(desktop) {
-      // margin: 5.6rem 16.4rem;
     }
 
     &-logo {
@@ -47,7 +42,7 @@
         font-size: 1.8rem;
         line-height: 2.5rem;
         font-weight: 700;
-        color: #7D828F;
+        color: #7d828f;
       }
 
       li {
@@ -61,7 +56,7 @@
             left: 50%;
             transform: translate(-50%);
             width: 2.4rem;
-            border-bottom: 1px solid #1B1D23;
+            border-bottom: 1px solid #1b1d23;
           }
         }
       }

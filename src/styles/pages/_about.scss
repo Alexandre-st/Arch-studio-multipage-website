@@ -1,4 +1,4 @@
-@use '../variables/mixins' as *;
+@use "../variables/mixins" as *;
 
 .hero-border {
   display: none;
@@ -51,13 +51,13 @@
     }
 
     .rectangle {
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       position: relative;
       top: -4rem;
       width: 91.46%;
       height: 4.5rem;
       z-index: 2;
-      
+
       @include mq(tablet) {
         display: none;
       }
@@ -66,9 +66,9 @@
     &-infos {
       margin: -2rem 3.2rem 0 3.2rem;
       z-index: 2;
-      
+
       @include mq(tablet) {
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         position: absolute;
         margin: -1px;
         bottom: 0;
@@ -88,7 +88,7 @@
 
       &-background {
         @include mq(tablet) {
-          margin-left:  5.9rem;
+          margin-left: 5.9rem;
         }
 
         @include mq(laptop) {
@@ -158,7 +158,6 @@
   }
 
   &-content {
-
     @include mq(laptop) {
       max-width: 44.6rem;
     }
@@ -188,18 +187,18 @@
   @include mq(desktop) {
     gap: 12%;
   }
-  
+
   &-container {
     margin-top: 5.5rem;
     display: flex;
     flex-wrap: wrap;
     row-gap: 7.9rem;
     column-gap: 1.1rem;
-    
+
     @include mq(tablet) {
       row-gap: 10rem;
     }
-    
+
     @include mq(laptop) {
       margin-top: 0;
       row-gap: 6.3rem;

@@ -3,16 +3,26 @@
 .modal {
   position: fixed;
   inset: 0;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0 2.4rem;
   z-index: 2;
+  cursor: pointer;
 
   &-container {
     position: relative;
     padding: 2.4rem;
     background-color: #fff;
     border-radius: 15px;
+    text-align: center;
+    cursor: default;
+  }
+
+  &-button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
   }
 }
