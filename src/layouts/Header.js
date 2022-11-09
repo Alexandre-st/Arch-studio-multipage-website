@@ -1,11 +1,10 @@
 import { Link, NavLink } from 'react-router-dom';
 
 import ArcLogo from '../assets/logo.svg';
+import Location from '../components/Location';
 import Menu from '../components/Menu';
 
 const Header = () => {
-
-  // const { roads } = useParams();
 
   const activeStyle = { 
     fontWeight : 'bold',
@@ -14,10 +13,12 @@ const Header = () => {
 
   return ( 
     <header className="header">
+      <Location />
       <div className="header-container container">
         <Link to='/'>
           <img className="header-container-logo" src={ArcLogo} alt="Arc" />
         </Link>
+
 
         <nav className="header-nav">
           <ul className="header-nav-list">
