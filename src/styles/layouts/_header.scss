@@ -1,6 +1,13 @@
 @use "../variables/mixins" as *;
 
 .header {
+  position: relative;
+
+  @include mq(desktop) {
+    max-width: 121.2rem;
+    margin: auto;
+  }
+
   &-container {
     margin: 3.2rem 0;
     display: flex;
