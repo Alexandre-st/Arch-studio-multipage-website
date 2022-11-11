@@ -37,6 +37,10 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.0001) 0.01%,
+      rgba(0, 0, 0, 0.499044) 100%
+    );
   }
 }

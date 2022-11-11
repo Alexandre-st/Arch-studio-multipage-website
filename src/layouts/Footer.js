@@ -16,10 +16,10 @@ const Footer = () => {
             <li><Link to='/contact'>Contact</Link></li>
           </ul>
         </div>
-        <div className="footer-button button" role="button">
-          <Link to='/portfolio'>See Our Portfolio</Link>
+        <Link className="footer-button button" to='/portfolio'>
+          See Our Portfolio
           <img src={Arrow} alt="Arrow link" />
-        </div>
+        </Link>
       </div>
     </footer>
   );

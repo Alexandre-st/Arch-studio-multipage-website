@@ -1,16 +1,16 @@
-@use '../variables/mixins' as *;
+@use "../variables/mixins" as *;
 
 .footer {
   margin-top: 13.2rem;
 
   @include mq(tablet) {
-      margin-top: 20rem;
-    }
-  
+    margin-top: 20rem;
+  }
+
   &-container {
-    background-color: #EEEFF4;
+    background-color: #eeeff4;
     height: 38.3rem;
-    
+
     @include mq(tablet) {
       display: flex;
       position: relative;
@@ -22,14 +22,14 @@
       height: 20rem;
     }
   }
-  
+
   &-content {
     position: relative;
-    
+
     @include mq(tablet) {
       display: flex;
       align-items: center;
-      background-color: #EEEFF4;
+      background-color: #eeeff4;
       width: 79.68%;
     }
 
@@ -39,7 +39,7 @@
   }
 
   &-img {
-    background-color: #1B1D23;
+    background-color: #1b1d23;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,7 +79,7 @@
     flex-direction: column;
     text-align: center;
     gap: 3.2rem;
-    padding: 9.3rem 0 3.1rem 0; 
+    padding: 9.3rem 0 3.1rem 0;
 
     @include mq(tablet) {
       flex-direction: row;
@@ -93,10 +93,14 @@
     }
 
     li {
-      color: #7D828F;
+      color: #7d828f;
       font-weight: 700;
       font-size: 1.8rem;
       line-height: 2.5rem;
+
+      &:hover {
+        color: #1b1d23;
+      }
     }
   }
 
@@ -109,7 +113,7 @@
       position: absolute;
       right: 0;
       top: 50%;
-      transform: translate(0, -50%)
+      transform: translate(0, -50%);
     }
   }
 }

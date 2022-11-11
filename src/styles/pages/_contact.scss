@@ -197,6 +197,10 @@
 
         p {
           font-weight: 700;
+
+          &:hover {
+            border-bottom: 1px solid #1b1d23;
+          }
         }
 
         img {
