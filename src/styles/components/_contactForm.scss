@@ -1,36 +1,63 @@
-@use '../variables/mixins' as *;
+@use "../variables/mixins" as *;
 
 .form {
   margin-top: 7.3rem;
 
+  @include mq(tablet) {
+    margin-top: 19.9rem;
+  }
+
   @include mq(laptop) {
     display: flex;
-    gap: 3rem;
+    gap: 6rem;
     justify-content: space-between;
+  }
 
-    h3 {
-      width: 35rem;
+  @include mq(desktop) {
+    gap: 3rem;
+  }
+
+  &-container {
+    @include mq(laptop) {
+      flex: 1;
     }
   }
 
+  h3 {
+    width: 16.2rem;
+
+    @include mq(tablet) {
+      width: 48rem;
+    }
+
+    @include mq(laptop) {
+      width: 35rem;
+    }
+  }
   &-content {
     margin-top: 4.2rem;
 
     @include mq(laptop) {
       margin-top: 0;
+      width: 62.5rem;
+    }
+
+    @include mq(desktop) {
       width: 73rem;
     }
 
     // Same style for the input and textarea elements
-    &-input, &-aera {
-      border-bottom: 1px solid #1B1D23;
+    &-input,
+    &-aera {
+      border-bottom: 1px solid #1b1d23;
       position: relative;
 
       label {
         visibility: hidden;
       }
 
-      input, textarea {
+      input,
+      textarea {
         width: 100%;
         padding-left: 3.449rem;
         font-size: 1.6rem;
@@ -40,10 +67,10 @@
         @include mq(laptop) {
           font-size: 2rem;
         }
-        
+
         &::placeholder {
           font-weight: 700;
-          color: #C8CCD8;
+          color: #c8ccd8;
         }
       }
     }
@@ -67,7 +94,7 @@
       position: absolute;
       right: 0;
       bottom: 1.5rem;
-      color: #DF5656;
+      color: #df5656;
       font-weight: 700;
       font-size: 1.2rem;
       line-height: 1.7rem;
@@ -75,7 +102,7 @@
       letter-spacing: -0.28125px;
 
       @include mq(laptop) {
-        font-size: 1.8rem
+        font-size: 1.8rem;
       }
     }
   }

@@ -1,8 +1,7 @@
-@use '../variables/mixins' as *;
+@use "../variables/mixins" as *;
 
 // Hero part
 .contact-hero {
-
   &-word {
     position: relative;
     top: -9rem;
@@ -37,13 +36,13 @@
     }
 
     .rectangle {
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       position: relative;
       top: -4rem;
       width: 91.46%;
       height: 4.5rem;
       z-index: 2;
-      
+
       @include mq(tablet) {
         display: none;
       }
@@ -52,9 +51,9 @@
     &-infos {
       margin: -2rem 3.2rem 0 3.2rem;
       z-index: 2;
-      
+
       @include mq(tablet) {
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         position: absolute;
         margin: -1px;
         bottom: 0;
@@ -74,7 +73,7 @@
 
       &-background {
         @include mq(tablet) {
-          margin-left:  6rem;
+          margin-left: 6rem;
         }
 
         @include mq(laptop) {
@@ -114,11 +113,11 @@
   }
 
   @include mq(laptop) {
-    margin-top: 27.5rem;
+    margin-top: 27.9rem;
   }
 
   &-border {
-    margin-bottom: 6.9rem;
+    margin-bottom: 6.8rem;
 
     @include mq(tablet) {
       margin-bottom: 4.9rem;
@@ -126,6 +125,12 @@
 
     @include mq(laptop) {
       margin-bottom: 7.3rem;
+    }
+  }
+
+  &-title {
+    @include mq(laptop) {
+      margin-top: -7.9rem;
     }
   }
 
@@ -154,7 +159,6 @@
     }
 
     &-text {
-
       @include mq(tablet) {
         display: flex;
         justify-content: space-between;
@@ -166,7 +170,6 @@
       }
 
       &-infos {
-
         @include mq(laptop) {
           width: 25rem;
         }
@@ -176,8 +179,6 @@
         }
 
         &-title {
-          margin-bottom: 1.4rem;
-
           @include mq(laptop) {
             margin-top: 0;
           }
@@ -205,4 +206,3 @@
     }
   }
 }
-

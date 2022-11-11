@@ -2,6 +2,7 @@
 
 .header {
   position: relative;
+  top: -1rem;
 
   @include mq(desktop) {
     max-width: 121.2rem;
@@ -9,13 +10,13 @@
   }
 
   &-container {
-    margin: 3.2rem 0;
+    margin: 3.7rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     @include mq(tablet) {
-      margin: 5.6rem auto;
+      margin: 6.1rem auto;
       justify-content: flex-start;
     }
 

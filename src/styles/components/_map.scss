@@ -1,5 +1,5 @@
 // Style for the map part.
-@use '../variables/mixins' as *;
+@use "../variables/mixins" as *;
 
 // To give the map a size by default
 .leaflet-container {
@@ -27,18 +27,15 @@
 
 // Need to fix the margin on tablet and desktop design
 .location {
-
   @include mq(tablet) {
     padding: 0 9.8rem 0 9.7rem;
   }
 
   @include mq(laptop) {
     padding: 0 0 0 9.7rem;
-    margin-right: 9.8rem;
   }
 
   @include mq(desktop) {
     padding: 0;
-    margin: 0;
   }
 }

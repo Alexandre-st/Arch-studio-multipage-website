@@ -19,7 +19,6 @@ const Header = () => {
           <img className="header-container-logo" src={ArcLogo} alt="Arc" />
         </Link>
 
-
         <nav className="header-nav">
           <ul className="header-nav-list">
             <li>

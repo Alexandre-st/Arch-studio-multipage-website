@@ -40,7 +40,7 @@ const Contact = () => {
       {/* Details section */}
       <section className="details">
         <div className="details-container container">
-        <div>
+        <div className="details-title">
           <div className="lil-border details-border" />
           <h2 className="mid-title">Contact<br />Details</h2>
         </div>

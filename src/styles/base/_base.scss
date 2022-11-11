@@ -1,16 +1,19 @@
-@use '../variables/mixins' as *;
+@use "../variables/mixins" as *;
 
 :root {
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-size: 10px;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 700;
 }
 
 .container {
-  max-width: 110rem;
+  max-width: 111rem;
   padding: 0 3.2rem;
   margin: auto;
 
@@ -24,17 +27,17 @@ h1, h2, h3, h4 {
 }
 
 .container-img {
-  max-width: 110rem;
+  max-width: 111rem;
   margin: auto;
 }
 
 .button {
-  background-color: #1B1D23;
+  background-color: #1b1d23;
   height: 7.2rem;
   display: flex;
   align-items: center;
   gap: 2.4rem;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2.5rem;
@@ -42,14 +45,14 @@ h1, h2, h3, h4 {
 
   img {
     filter: brightness(0) invert(1);
-    width: 2.4rem; 
-    height: 1.8rem; 
+    width: 2.4rem;
+    height: 1.8rem;
   }
 }
 
 // Little border for the style
 .lil-border {
-  border: 1px solid #C8CCD8;
+  border: 1px solid #c8ccd8;
   width: 6.5rem;
 }
 
@@ -59,30 +62,31 @@ h1, h2, h3, h4 {
 
   @include mq(tablet) {
     display: block;
-    font-size: 15rem;
+    font-size: 12rem;
     line-height: 20rem;
     font-weight: 700;
     letter-spacing: -3px;
-    color: #EEEFF4;
+    color: #eeeff4;
   }
 
   @include mq(laptop) {
     font-size: 25rem;
     line-height: 20rem;
     letter-spacing: -5px;
+    position: relative;
+    z-index: 2;
   }
-
 }
 
 // Styles for the different images for the home page and the portfolio
 .image-container {
   position: relative;
-  
+
   &-img {
     @include background-image;
-    
+
     img {
-      background: #E1E1E1;
+      background: #e1e1e1;
     }
   }
 
@@ -90,7 +94,7 @@ h1, h2, h3, h4 {
     position: absolute;
     top: 41.83%;
     margin-left: 2.4rem;
-    color: #FFFFFF;
+    color: #ffffff;
 
     @include mq(tablet) {
       margin-left: 4rem;
@@ -100,7 +104,7 @@ h1, h2, h3, h4 {
     @include mq(laptop) {
       top: 65.67%;
     }
-    
+
     @include mq(desktop) {
       top: 71.67%;
     }
@@ -126,7 +130,7 @@ h1, h2, h3, h4 {
       font-size: 25rem;
       line-height: 20rem;
       letter-spacing: -5px;
-      color: #FFFFFF;
+      color: #ffffff;
       opacity: 0.5;
     }
 

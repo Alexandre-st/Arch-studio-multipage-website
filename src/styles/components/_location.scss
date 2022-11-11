@@ -5,13 +5,13 @@
   @include mq(tablet) {
     display: block;
     position: absolute;
-    top: 13.4rem;
-    left: -15.8rem;
+    top: 15.7rem;
+    left: -17rem;
     display: flex;
     align-items: center;
     gap: 4.8rem;
     rotate: (90deg);
-    width: 40.3rem;
+    width: 44rem;
 
     &-border {
       border-bottom: 1px solid #c8ccd8;
@@ -29,6 +29,6 @@
   }
 
   @include mq(desktop) {
-    left: -21.8rem;
+    left: -23rem;
   }
 }
