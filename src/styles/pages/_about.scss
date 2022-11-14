@@ -213,6 +213,7 @@
 
   &-content {
     width: 31.1rem;
+    position: relative;
 
     @include mq(tablet) {
       width: 28rem;
@@ -233,5 +234,13 @@
         margin-top: -5rem;
       }
     }
+  }
+
+  &-link {
+    // display: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
   }
 }
