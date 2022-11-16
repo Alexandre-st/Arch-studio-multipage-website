@@ -10,7 +10,7 @@ const Location = () => {
       <p className='header-location-text'>
         {
           location.pathname === '/' ? 'home' 
-          : location.pathname !== '/portfolio' ? location.pathname.slice(1) + ' us' 
+          : location.pathname === '/about' ? location.pathname.slice(1) + ' us' 
           : location.pathname.slice(1)
         }
       </p>

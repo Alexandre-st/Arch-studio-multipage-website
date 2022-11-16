@@ -3,10 +3,6 @@ import { Link } from "react-router-dom";
 import MHero from "../assets/about/mobile/image-hero.jpg";
 import THero from "../assets/about/tablet/image-hero.jpg";
 import DHero from "../assets/about/desktop/image-hero.jpg";
-// import Jake from '../assets/about/desktop/avatar-jake.jpg';
-// import Thompson from '../assets/about/desktop/avatar-thompson.jpg';
-// import Jackson from '../assets/about/desktop/avatar-jackson.jpg';
-// import Maria from '../assets/about/desktop/avatar-maria.jpg';
 import Linkedin from "../assets/icons/icon-linkedin.svg";
 import Twitter from "../assets/icons/icon-twitter.svg";
 import Heritage from "../assets/about/desktop/image-heritage.jpg";
@@ -103,38 +99,17 @@ const About = () => {
                     <h5 className="lil-title">{leader.name}</h5>
                     <p className="text text-grey">{leader.job}</p>
                   </div>
-                  <div className="leaders-link">
-                    <Link className="leaders-link--link" to={leader.linkedin}>
+                  <div className="leaders-content-link">
+                    <Link to="#" className="leaders-content-link--link">
                       <img src={Linkedin} alt="Linkedin link" />
                     </Link>
-                    <Link className="leaders-link--link" to={leader.t}>
+                    <Link to="#" className="leaders-content-link--link">
                       <img src={Twitter} alt="Twitter link" />
                     </Link>
                   </div>
                 </div>
               );
             })}
-            {/* <div className="leaders-content">
-              <img className="leaders-content-img" src={Thompson} alt="Thompson Smith" />
-              <div className="leaders-content-text">
-                <h5 className="lil-title">Thompson Smith</h5>
-                <p className="text text-grey">Head of Finance</p>
-              </div>
-            </div>
-            <div className="leaders-content">
-              <img className="leaders-content-img" src={Jackson} alt="Jackson Rourke" />
-              <div className="leaders-content-text">
-                <h5 className="lil-title">Jackson Rourke</h5>
-                <p className="text text-grey">Lead Designer</p>
-              </div>
-            </div>
-            <div className="leaders-content">
-              <img className="leaders-content-img" src={Maria} alt="Maria Simpson" />
-              <div className="leaders-content-text">
-                <h5 className="lil-title">Maria Simpson</h5>
-                <p className="text text-grey">Senior Architect</p>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>

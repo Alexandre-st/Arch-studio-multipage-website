@@ -214,6 +214,7 @@
   &-content {
     width: 31.1rem;
     position: relative;
+    overflow: hidden;
 
     @include mq(tablet) {
       width: 28rem;
@@ -234,13 +235,53 @@
         margin-top: -5rem;
       }
     }
-  }
 
-  &-link {
-    // display: none;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 3.2rem;
+    &-img {
+      position: relative;
+      z-index: 1;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    // To make the hover effect on the card (images)
+    &-link {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      z-index: 3;
+      right: -100%;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      gap: 3.2rem;
+      height: 28.4rem;
+      background: #000;
+      opacity: 0.5;
+      transition: 0.5s;
+
+      @include mq(tablet) {
+        height: 25.6rem;
+      }
+
+      @include mq(laptop) {
+        height: 22.8rem;
+      }
+
+      @include mq(desktop) {
+        height: 32rem;
+      }
+
+      &--link {
+        filter: brightness(0) invert(1);
+        width: fit-content;
+      }
+    }
+
+    &:hover &-link {
+      right: 0;
+    }
   }
 }
