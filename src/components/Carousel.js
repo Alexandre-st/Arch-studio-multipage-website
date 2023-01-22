@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
-import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper';
+import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { slides } from '../data/slides';
 
 import Arrow from '../assets/icons/icon-arrow.svg';
 
+import 'swiper/css/effect-fade';
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
-import 'swiper/css/effect-fade';
 
 const Carousel = () => {
 
@@ -40,7 +40,7 @@ const Carousel = () => {
               <picture className="home-hero-img">
                 <source srcSet={slide.imageDesktop} media="(min-width: 1024px)" />
                 <source srcSet={slide.imageTablet} media="(min-width: 768px)" />
-                <img src={slide.imageMobile} alt={slide.name} />
+                <img loading='lazy' src={slide.imageMobile} alt={slide.name} />
               </picture>
             </div>
             <div className="home-hero-content-text">

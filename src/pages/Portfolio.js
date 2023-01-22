@@ -10,7 +10,7 @@ const PortFolio = () => {
                 <picture className="image-container-img">
                   <source srcSet={project.imageDesktop} media="(min-width: 1024px)" />
                   <source srcSet={project.imageTablet} media="(min-width: 768px)" />
-                  <img src={project.imageMobile} alt={project.name} />
+                  <img loading='lazy' src={project.imageMobile} alt={project.name} />
                 </picture>
                 <div className="image-container-content">
                   <div className="image-container-content-text">
